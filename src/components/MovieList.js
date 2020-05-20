@@ -4,7 +4,14 @@ import { useRecoilValue } from 'recoil';
 import { searchResult } from '../states/searchState';
 import MovieCard from './MovieCard';
 
-const movieCardList = css``;
+const movieCardList = css`
+  display: grid;
+  width: 100%;
+  margin-top: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+`;
 
 const MovieList = () => {
   // https://github.com/facebookexperimental/Recoil/issues/12
