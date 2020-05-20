@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useRecoilState, useSetRecoilState } from 'recoil';
+import { useSetRecoilState } from 'recoil';
 import { searchState } from '../states/searchState';
 import { css } from 'emotion';
 import { Icon } from '@iconify/react';
