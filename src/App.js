@@ -3,6 +3,7 @@ import { RecoilRoot } from 'recoil';
 import SearchInput from './components/SearchInput';
 import MovieList from './components/MovieList';
 import { css } from 'emotion';
+import Spinner from './components/Spinner';
 
 const wrapper = css`
   width: 100%;
@@ -18,7 +19,7 @@ function App() {
     <RecoilRoot>
       <div className={wrapper}>
         <SearchInput />
-        <Suspense fallback={<h1>loading</h1>}>
+        <Suspense fallback={<Spinner />}>
           <MovieList />
         </Suspense>
       </div>
